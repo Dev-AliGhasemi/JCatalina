@@ -1,7 +1,7 @@
 # JCatalina
 JCatalina is a java program that run in the background to change the catalina wallpaper from morning to night
 
-Catalina is a good wallpaper used in MacOs . this is island Catalina !
+Catalina is a good wallpaper used in MacOS . this is island Catalina !
 
 ![Catalina](https://i.redd.it/m8c20gchf7231.jpg)
 
@@ -33,4 +33,4 @@ JCatalina under GPLv3
 
 ## Collaborate
 im enjoy to improve this app with you ! :)
-take cate !
+take care !
