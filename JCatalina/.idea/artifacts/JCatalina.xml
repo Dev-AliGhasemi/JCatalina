@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JCatalina">
+    <output-path>$PROJECT_DIR$/out/artifacts/JCatalina</output-path>
+    <root id="archive" name="JCatalina.jar">
+      <element id="module-output" name="JCatalina" />
+    </root>
+  </artifact>
+</component>
