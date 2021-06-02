@@ -26,7 +26,7 @@ public class Catalina {
                             max = integer;
                     }
                 } else {
-                    max = 1;
+                    max = imageTimeSpectrum.stream().min(Integer::compareTo).get();
                 }
                 try {
                     if (lastMax != max) {
@@ -34,8 +34,6 @@ public class Catalina {
                         Files.copy(Paths.get(path.toAbsolutePath().toString() + "/" + max + ".jpg"), Paths.get("/home/ali/Pictures/Wallpapers/Catalina.jpg"), StandardCopyOption.REPLACE_EXISTING);
                         Thread.sleep(300000);
                     }
-//                    Runtime runtime = Runtime.getRuntime();
-//                    runtime.exec("gsettings set org.gnome.desktop.background picture-uri file:///" + path.toAbsolutePath() + "/" + max + ".jpg");
                 } catch (InterruptedException | IOException e) {
                     e.printStackTrace();
                 }
