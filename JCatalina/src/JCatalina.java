@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class JCatalina {
 
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("src/images");
+        Path path = Paths.get("images");
         Logger logger = Logger.getLogger("JCatalinaLogger");
         Stream<Path> images = Files.list(path);
         List<Path> imagesSpectrum = images.collect(Collectors.toList());
