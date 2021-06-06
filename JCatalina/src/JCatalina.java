@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class JCatalina {
 
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("images");
+        Path path = Paths.get("src/images");
         Logger logger = Logger.getLogger("JCatalinaLogger");
         Stream<Path> images = Files.list(path);
         List<Path> imagesSpectrum = images.collect(Collectors.toList());
@@ -39,8 +39,8 @@ public class JCatalina {
                         Files.copy(Paths.get(path.toAbsolutePath().toString() + "/" + max + ".jpg"),
                                 Paths.get("/home/ali/Pictures/Wallpapers/Catalina.jpg"),
                                 StandardCopyOption.REPLACE_EXISTING);
-                        Thread.sleep(300000);
                     }
+                    Thread.sleep(300000);
                 } catch (InterruptedException | IOException e) {
                     e.printStackTrace();
                     logger.log(Level.OFF, e.getMessage());
